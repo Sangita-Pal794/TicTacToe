@@ -2,12 +2,6 @@
 
 reset(){
   echo "====================="
-  echo "Created by Sangita-Pal"
-=======
-#! /bin/bash -x
-
-reset(){
-  echo "====================="
   echo "Created by Sangita-Pal794"
   echo "2020.8.3"
   echo "TicTacToe game in bash"
@@ -24,5 +18,8 @@ reset(){
   else
     echo "Player two will play"
   fi
+  if [ $player == 1 ]; then sym=O
+  else sym=X; fi
+  echo "Player $player's turn: ($sym)"
 }
 reset
