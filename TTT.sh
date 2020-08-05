@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 # Tic Tac Toe Game
 
 #Choose letter X/O as an user if my turn's comes
@@ -16,7 +16,7 @@ done
 
 
 display_GRID(){
-  echo ${GRID[0]}$'\t'${GRID[1]}$'\t'${GRID[2]}$'\t'$'\n'
-  echo ${GRID[3]}$'\t'${GRID[4]}$'\t'${GRID[5]}$'\t'$'\n'
-  echo ${GRID[6]}$'\t'${GRID[7]}$'\t'${GRID[8]}$'\t'$'\n'
+  echo -e ${GRID[0]}'\t'${GRID[1]}'\t'${GRID[2]}'\n'
+  echo -e ${GRID[3]}'\t'${GRID[4]}'\t'${GRID[5]}'\n'
+  echo -e ${GRID[6]}'\t'${GRID[7]}'\t'${GRID[8]}'\n'
 }
