@@ -3,9 +3,11 @@
 
 #Choose letter X/O as an user if my turn's comes
 declare -a GRID=('_' '_' '_' '_' '_' '_' '_' '_' '_')
+declare -a VALID_ID=('1' '2' '3' '4' '5' '6' '7' '8' '9')
+GRID_INDEX=0
 for TURN in {0..8}
 do
-   display_GRID
+   display_GRID()
   if [ $(($TURN%2)) -eq 0 ]
   then
        echo X\'s TURN
